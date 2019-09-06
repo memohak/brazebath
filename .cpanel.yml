@@ -1,6 +1,5 @@
----i
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mfuzif5oeret/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - export DEPLOYPATH=/home/mfuzif5oeret/public_html #Add /<sub_folder> if required
+    - /bin/cp -r * $DEPLOYPATH
